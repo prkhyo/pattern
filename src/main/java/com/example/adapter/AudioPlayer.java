@@ -1,7 +1,7 @@
 package com.example.adapter;
 
 // Client class
-// 어댑터 패턴을 사용하는 객체로, 기존의 기능과 새로 추가된 기능을 통합하여 구현한 인터페이스를 호출한다.
+// 어댑터 패턴을 사용하는 객체로, 기존의 기능과 새로 추가된 기능을 통합하여 구현한 인터페이스를 정의
 public class AudioPlayer implements MediaPlayer{
     MediaAdapter mediaAdapter; // 어댑터 객체를 참조
 

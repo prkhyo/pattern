@@ -38,6 +38,9 @@ public class MyHandlerAdapter implements HandlerAdapter {
         return new ModelAndView("viewName", "data", result);
     }
 
+    // 스프링이 handle을 통해 응답을 반환할때 함께 실행. (어댑터 예제와는 상관X)
+    // 이 메서드를 통해 스프링 MVC는 리소스가 변경된 시점을 클라이언트에게 알려주고,
+    // 알려준 값을 세팅해서 재요청시 서버는 리소스 수정 시간이 변경되지 않았다면 클라이언트가 캐시된 버전을 사용하도록 304 Not Modified 응답을 반환
     @Override
     public long getLastModified(HttpServletRequest request, Object handler) {
         return -1;
