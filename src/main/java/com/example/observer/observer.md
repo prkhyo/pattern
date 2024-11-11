@@ -38,7 +38,7 @@ Pub/Sub(발행/구독) 모델로도 알려져 있으며, 이벤트 기반 시스
 </table> <br><br>
 
 
-### ➤ 어댑터 패턴의 UML 다이어그램 <br>
+### ➤ 옵저버 패턴의 UML 다이어그램 <br>
 ![img.png](https://snowdeer.github.io/assets/design-patterns/observer.png)
 + ConcreteSubject 는 내부에 Observer들을 리스트로 모아 합성(compositoin)하여 가지고 있다.
 
