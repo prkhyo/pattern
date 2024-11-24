@@ -4,12 +4,12 @@ public class StockMarketApplication {
 
     public static void main(String[] args) {
 
-        // 주식 데이터 생성
+        // 주식 종목 데이터 생성
         StockConcreteSubject googleStock = new StockConcreteSubject("GOOGL");
 
         // 투자자 생성 및 등록
-        InvestorConcreteObserver investor1 = new InvestorConcreteObserver("김철수");
-        InvestorConcreteObserver investor2 = new InvestorConcreteObserver("이영희");
+        InvestorConcreteObserver investor1 = new InvestorConcreteObserver("박우영");
+        InvestorConcreteObserver investor2 = new InvestorConcreteObserver("박효진");
 
         // 구독
         googleStock.addObserver(investor1);

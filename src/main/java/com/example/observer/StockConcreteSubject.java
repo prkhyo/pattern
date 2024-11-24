@@ -5,17 +5,13 @@ import java.util.List;
 
 // ConcreteSubject 클래스: 주식 데이터
 public class StockConcreteSubject implements StockSubject{
-    private List<InvestorObserver> observers;
-    private String stockSymbol;
-    private float stockPrice;
+    private List<InvestorObserver> observers; // 투자자들 정보
+    private String stockSymbol; // 주식 종목
+    private float stockPrice; // 주식 가격
 
     public StockConcreteSubject(String stockSymbol) {
         this.stockSymbol = stockSymbol;
         this.observers = new ArrayList<>();
-    }
-
-    public String getStockSymbol() {
-        return stockSymbol;
     }
 
 
@@ -23,10 +19,6 @@ public class StockConcreteSubject implements StockSubject{
     public void setStockPrice(float price) {
         this.stockPrice = price;
         notifyObservers();
-    }
-
-    public float getStockPrice() {
-        return stockPrice;
     }
 
 
